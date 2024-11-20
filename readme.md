@@ -1,4 +1,4 @@
-# **Social Media Platform - Database Schema**
+# **Social Media Platform - Database Schema ASSIGNEMENT**
 
 This document describes the database schema for a social media platform. It includes three primary collections: **Users**, **Posts**, and **Friend Requests**. These schemas define the relationships and structure of the data in the MongoDB database.
 
@@ -41,7 +41,7 @@ The **Friend Requests** collection tracks all friend request activities between 
 - **`receiver`**: A reference to the user who received the friend request (stored as a user ID).
 - **`status`**: A string indicating the request status. Possible values:
   - **`pending`**
-  - **`accepted`**
+  - **`accepted`**ds
   - **`rejected`**
 - **`createdAt`**: The timestamp when the friend request was sent (default to the current time).
 
