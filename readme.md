@@ -1,4 +1,4 @@
-# **Social Media Platform - Database Schema ASSIGNMENT**
+# **Social Media Platform API - ASSIGNMENT**
 
 This document describes the database schema for a social media platform. It includes three primary collections: **Users**, **Posts**, and **Friend Requests**. These schemas define the relationships and structure of the data in the MongoDB database.
 
@@ -53,5 +53,19 @@ The **Friend Requests** collection tracks all friend request activities between 
 2. **Users and Friends**: The `friends` field in the `User` collection holds references to other user IDs.
 3. **Friend Requests**: The `sender` and `receiver` fields link friend requests to users.
 
----
+---# API Endpoints
+
+## Authentication
+- **POST** `/api/auth/register`: Register a new user.
+- **POST** `/api/auth/login`: Login a user and receive a JWT token.
+
+## Friends
+- **POST** `/api/friends/request`: Send a friend request.
+- **PUT** `/api/friends/request/:requestId`: Accept or reject a friend request using status (accepted or rejected).
+- **GET** `/api/friends/requests`: Retrieve all pending friend requests for the current user.
+
+## Posts
+- **POST** `/api/posts`: Create a new post.
+- **GET** `/api/feed`: Retrieve a personalized feed with posts from friends or comments from friends.
+
 
