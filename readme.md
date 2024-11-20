@@ -1,4 +1,4 @@
-# **Social Media Platform - Database Schema ASSIGNEMENT**
+# **Social Media Platform - Database Schema ASSIGNMENT**
 
 This document describes the database schema for a social media platform. It includes three primary collections: **Users**, **Posts**, and **Friend Requests**. These schemas define the relationships and structure of the data in the MongoDB database.
 
